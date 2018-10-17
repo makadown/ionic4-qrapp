@@ -25,3 +25,19 @@ Elegí que instalara ionic 4, cordova y omito ionic pro sdk.
 El proyecto en ionic 4 ahora tiene la estructura siguiente:
 
 ![alt text](qrapp03.png "Estructura de proyecto")
+
+
+Iconos de ionic pueden ser consultados aquí:
+
+https://ionicframework.com/docs/ionicons/
+
+
+## Cambios de version 4
+
+La forma de enrutamiento en los tabs es extremadamente diferente. Aquí una guia:
+
+https://medium.com/@sandipmann/routing-in-ionic-4-84cb052cbe51
+
+
+
+

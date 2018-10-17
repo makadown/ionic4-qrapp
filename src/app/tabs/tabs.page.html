@@ -1,9 +1,8 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tabs</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-
-</ion-content>
+<ion-tabs color="primary">
+    <ion-tab label="Scan" icon="qr-scanner" href="/tabs/(home:home)">
+        <ion-router-outlet name="home"></ion-router-outlet>
+    </ion-tab>
+    <ion-tab label="Historial" icon="list" href="/tabs/(guardados:guardados)">
+        <ion-router-outlet name="guardados"></ion-router-outlet>
+    </ion-tab>
+</ion-tabs>
