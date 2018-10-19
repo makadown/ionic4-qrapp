@@ -41,7 +41,14 @@ https://medium.com/@sandipmann/routing-in-ionic-4-84cb052cbe51
 
 ### Instalacion de plugins nativos (beta ionic 4): 
 
+BarCode Scanner
+
 > ionic cordova plugin add phonegap-plugin-barcodescanner
 
 > npm install --save @ionic-native/barcode-scanner@beta
 
+Toast
+
+> ionic cordova plugin add cordova-plugin-x-toast
+
+> npm install --save @ionic-native/toast@beta
