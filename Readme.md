@@ -39,5 +39,9 @@ La forma de enrutamiento en los tabs es extremadamente diferente. Aquí una guia
 https://medium.com/@sandipmann/routing-in-ionic-4-84cb052cbe51
 
 
+### Instalacion de plugins nativos (beta ionic 4): 
 
+> ionic cordova plugin add phonegap-plugin-barcodescanner
+
+> npm install --save @ionic-native/barcode-scanner@beta
 
