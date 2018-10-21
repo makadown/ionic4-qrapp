@@ -2,6 +2,9 @@
 
 Demo experimental en ionic 4 de app de curso de instructor Fernando Herrera.
 
+Recursos de auxilio:
+https://www.qrcode.es/es/generador-qr-code/
+
 ## Creación de proyecto
 
 > ionic start qrapp blank
