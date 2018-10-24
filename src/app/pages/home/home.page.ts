@@ -15,6 +15,10 @@ export class HomePage {
 
   scan() {
 
+    if (!this.platform.is('cordova')) {
+      return;
+    }
+
     this.barcodeScanner.scan().then(barcodeData => {
      // console.log('Barcode data', barcodeData);
       this.mostrarToast('We got a barcode\n' +

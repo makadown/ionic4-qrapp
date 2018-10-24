@@ -41,6 +41,14 @@ La forma de enrutamiento en los tabs es extremadamente diferente. Aquí una guia
 
 https://medium.com/@sandipmann/routing-in-ionic-4-84cb052cbe51
 
+Antes para generar providers se invocaba:
+
+> ionic generate provider historial
+
+ahora es:
+
+> ionic generate service miServicio
+
 
 ### Instalacion de plugins nativos (beta ionic 4): 
 
