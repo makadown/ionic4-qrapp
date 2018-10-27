@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { Toast } from '@ionic-native/toast/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+
 
 import { HistorialService } from './services/historial.service';
 
@@ -19,7 +21,7 @@ import { HistorialService } from './services/historial.service';
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
-    StatusBar, BarcodeScanner, Toast,
+    StatusBar, BarcodeScanner, Toast, InAppBrowser,
     SplashScreen, HistorialService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

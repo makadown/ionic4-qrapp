@@ -4,6 +4,13 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-    GUARDADOS WORKS!
+<ion-content>
+    <ion-list>
+        <div *ngFor="let data of historial; let i= index">
+            <div style="text-align: center">Scan {{i+1}}. Tipo: {{data.tipo}}</div>
+            <ion-button expand="block" (click)="abrir_scan(i)">
+                {{data.info}}
+            </ion-button>
+        </div>
+    </ion-list>
 </ion-content>

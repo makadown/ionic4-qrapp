@@ -58,8 +58,16 @@ BarCode Scanner
 
 > npm install --save @ionic-native/barcode-scanner@beta
 
+
 Toast
 
 > ionic cordova plugin add cordova-plugin-x-toast
 
 > npm install --save @ionic-native/toast@beta
+
+
+In app browser
+
+> ionic cordova plugin add cordova-plugin-inappbrowser
+
+> npm install --save @ionic-native/in-app-browser@beta

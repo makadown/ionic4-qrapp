@@ -1,8 +1,9 @@
 import { Platform } from '@ionic/angular';
 import { Component } from '@angular/core';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { BarcodeScanner, BarcodeScanResult } from '@ionic-native/barcode-scanner/ngx';
 import { Toast } from '@ionic-native/toast/ngx';
 import { HistorialService } from '../../services/historial.service';
+import { BarcodeData } from '../../../models/barcode-data.model';
 
 @Component({
   selector: 'app-home',
@@ -22,14 +23,13 @@ export class HomePage {
       return;
     }
 
-    this.barcodeScanner.scan().then(barcodeData => {
+    this.barcodeScanner.scan().then( (barcodeData: BarcodeScanResult) => {
      // console.log('Barcode data', barcodeData);
       this.mostrarToast('We got a barcode\n' +
                 'Result: ' + barcodeData.text + '\n' +
                 'Format: ' + barcodeData.format + '\n' +
                 'Cancelled: ' + barcodeData.cancelled);
-      if ( (barcodeData.cancelled === 0 || barcodeData.cancelled === false) && 
-            barcodeData.text != null ) {
+      if (  !barcodeData.cancelled  /*&& barcodeData.text != null*/ ) {
         this.historialService.agregar_historial(barcodeData.text);
       }
      }).catch(err => {
